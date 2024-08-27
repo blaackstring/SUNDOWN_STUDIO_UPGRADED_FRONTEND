@@ -74,6 +74,7 @@ requestAnimationFrame(raf)
 let fixeddiv=document.querySelector('.fixedvdos')
 let allvdos=document.querySelectorAll('.lft')
 
+
 allvdos.forEach((x)=>{
     x.addEventListener('mouseenter',(e)=>{
         if(e.target){
@@ -83,16 +84,20 @@ allvdos.forEach((x)=>{
            fixeddiv.style.backgroundImage=`url(${y})`;//literal template
            fixeddiv.style.backgroundSize='cover';
            fixeddiv.style.backgroundPostion='center'
+           
            fixeddiv.style.display='block'
 
         }
     })
 
-    x.addEventListener('mouseleave',(e)=>{
+   document.querySelector('.page4').addEventListener('mouseleave',(e)=>{
         if(e.target){
        
-           fixeddiv.style.display='none'
-
+    console.log("j");
+    
+             fixeddiv.style.display='none'
+        
+       return;
         }
     })
 })

@@ -304,7 +304,7 @@ text-align: center;
   display: block;
   margin-left: 100px;
   font-family: sans-serif;
-  font-size: 1.3vw;
+  font-size: 1.8vw;
   padding: 0 2vw;
   margin: 0 2vw;
   line-height: 1.7vw;
@@ -698,7 +698,7 @@ input{
   position: fixed;
   background-color: #F8380C;
   width: 28%;
-  height: 60vh;
+  height: 28vw;
   z-index: 5;
   left: 40%;
   top: 24vh;
