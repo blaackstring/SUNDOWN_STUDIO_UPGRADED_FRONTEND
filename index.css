@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+ 
+}
+#page1{
+    width: 100%;
+    min-height: 100vw;
+  padding: 0 2vw;
+    background-color:#EFEAE3;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.832);
+    overflow: hidden;
+}
+nav{
+    width: 100%;
+    padding-top: 10px;
+     display: flex;
+     justify-content: space-between;
+   padding-left: 0.5vw;
+ 
+
+}
+.img{
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 10vh;margin-top: 10px;
+    transition: 0.21s all ease-out;
+}
+.img:hover{
+    background-color: rgba(25, 21, 12, 0.386);
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+button{
+    margin-right: 20px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.901);
+    width: 10vw;
+     border: 1px solid #6867669c;
+     border-radius: 20px;
+    font-size: 1.6vw;
+    font-weight: bolder;
+    background-color: #EFEAE3;
+    font-weight:500;
+    position: relative;
+    z-index: 1;
+ overflow: hidden;
+ 
+}
+
+button::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    transform: translateY(100%);
+    transition: 0.21s all ease-out;
+    transition-delay: 0.1s;
+    color: white;
+}
+button:hover::before{
+    transform: translateY(0%);
+    
+}
+button:hover{
+    color: white;
+}
+.center {
+  width: 100%;
+  height: 86vh;
+  border-bottom: 1px solid rgba(142, 134, 134, 0.429);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3vw;
+  justify-content: space-between;
+  transition: 0.5s all ease-in;
+}
+
+.center>.left>h3 {
+    width: 30vw;
+    font-family: sans-serif;
+  font-size: 1.9vw;
+  transition: 0.9s all ease;
+}
+.center>.left>h3:hover {
+     background-color:#F8380C ;
+    transform: scale(1.13);
+    border: 1px solid black;
+    border-radius: 6px;
+  } 
+  
+.right {
+  text-align: right;
+}
+.center>.right>h1{
+    font-family: sans-serif;
+ line-height:8vw;
+ font-weight: 700;
+ letter-spacing:-3px;
+ font-size:11vw;
+ transition: 0.4s all ease;
+
+ 
+}
+.center>.right>h1:hover{
+    
+    background: black;
+    color: wheat;
+    cursor: pointer;
+}
+@media screen and (max-width:800px) {
+    .center {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.center>.right>h1{
+    font-family: sans-serif;
+    line-height:9vw;
+}
+.center>.right {
+  margin-bottom: 5vh;
+}
+}
+
+#page1>video{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 8vh;
+  position: relative;
+    
+}
+.hero-shape {
+width: 50vw;
+  position: absolute;
+  height: 36vw;
+  right: 0;
+  top: 88vh;
+
+
+}
+.hero1 {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius:50% ;
+  border-bottom-left-radius:50% ;
+  filter: blur(20px);
+  position: absolute;
+  background-color: #F8380C;
+  animation-name: animation1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.hero2 {
+    height: 30vw;
+    width: 23vw;
+    filter: blur(20px);
+    border-top-left-radius:50% ;
+    position: absolute;
+    border-bottom-left-radius:50% ;
+    background-color: #F8380C;
+    animation-name: animation2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  .hero3 {
+    height: 30vw;
+    width: 25vw;
+    filter: blur(20px);
+    position: absolute;
+    border-top-left-radius:50% ;
+    border-bottom-left-radius:50%;
+    background-color: #F8380C;
+    animation-name: animation3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  
+  
+@keyframes animation2{
+    from{
+        transform: translate(-8% ,8%);
+    }
+    to{
+        transform: translate(9% ,-8%);
+    }
+}
+
+@keyframes animation1{
+    from{
+        transform: translate(2% ,-2%);
+    }
+    to{
+        transform: translate(5% ,3%);
+    }
+}
+@keyframes animation3{
+    from{
+        transform: translate(2% ,-3%);
+    }
+    to{
+        transform: translate(5% ,3%);
+    }
+}
+.page2 {
+height: 80vh;
+  width: 100%;
+ overflow: hidden;
+text-align: center;
+  transition: 0.3s all ease;
+  padding: 0 1vw;
+  background-color: #EFEAE3;
+}
+.page2>h1 {
+  font-size: 11vw;
+ letter-spacing: 3px;
+ background-color: rgb(177, 52, 23);
+ margin-top: 8px;
+ font-family: sans-serif;
+}
+.page2>h1:hover{
+  background-color: black;
+  color:#F8380C;
+}
+.page3 {
+  width: 100%;
+  height: 102vh;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 8vw;
+  padding-left: 4vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-weight: 900;
+  background-color:#EFEAE3;
+}
+.icon {
+
+  text-align: left;
+  position: relative;
+  top: 40vh;
+  left: -1vh;
+  display: inline-block;
+  width: 1.4vw;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: #F8380C;
+}
+.icontext{
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  top: 39.5vh;
+  left: -1vh;
+  display: inline-block;
+  text-transform: uppercase;
+
+}
+.page3>.l{
+  width: 60%;
+  font-size: 2.1vw;
+  line-height: 4vw;
+  height: 40vh;
+  position: relative;
+
+}
+.r{
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+  float: right;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.r>p{
+  display: block;
+  margin-left: 100px;
+  font-family: sans-serif;
+  font-size: 1.3vw;
+  padding: 0 2vw;
+  margin: 0 2vw;
+  line-height: 1.7vw;
+  width: 30vw;
+  font-weight: 100;
+  color: rgba(13, 9, 9, 0.733);
+}
+#img2{
+ width: 60%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.anime {
+  width: 37vw;
+  position: absolute;
+  height: 37vw;
+  right: 0;
+  top: 34vh;
+  left: 20vw;
+
+}
+.a1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F8380C;
+  filter: blur(30px);
+  animation-name: animee1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.a2{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 3vw;
+  background-color: #F8380C;
+  filter: blur(30px);
+  animation-name: animee2;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+.a3{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  background-image:radial-gradient( rgb(229, 44, 20) 65%, yellow 1%,);
+  filter: blur(30px);
+  animation-name: animee3;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+@keyframes animee1 {
+  from{
+    transform: translate(8%,-10%);
+  }
+  to{
+    transform: translate(-5%,3%);
+  }
+}
+@keyframes animee2 {
+  from{
+    transform: translate(-8%,9%);
+  }
+  to{
+    transform: translate(6%,-7%);
+  }
+}
+
+@keyframes animee3 {
+  from{
+    transform: translate(-8%,6%);
+  }
+  to{
+    transform: translate(-12%,9%);
+  }
+}
+.page4{
+  width: 100%;
+  min-height: 150vh;
+  padding-top: 5vw;
+  background-color:#EFEAE3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.832);
+  overflow: hidden;
+
+}
+.page4>.lft{
+  width: 100%;
+  height: 15vh;
+  font-family: sans-serif;
+  position: relative;
+  z-index: 1;
+  
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(138, 130, 130, 0.459);
+
+}
+
+.page4>.lft>.lft1 {
+  font-size: 3.3vw;
+
+}
+.page4>.lft>h3{
+ text-transform: uppercase;
+ font-size: 1.8vw;
+}
+
+.lft::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color:#FF9831;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.2s all ease;;
+  transform: translateY(-100%);
+}
+
+.lft:hover::before{
+  transform: translateY(0%);
+color: white;
+cursor: pointer;
+  
+}
+.lft:hover{
+  background-image: url(https://www.sundown-studio.com/projects/kelce-super-bowl-party);
+}
+.page4>button{
+  margin-top: 5vh;
+  margin-left: 2vw;
+  width: 15vw;
+  font-size: 1.5vw;
+  word-spacing: 5px;
+}
+footer{
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
+  color: white;
+  border-bottom: 1px solid gray;
+
+}
+.page5 {
+  width: 100%;
+  height: 113vh;
+  font-size: 9.3vw;
+border-bottom: 1px solid;
+flex-direction: column;
+ display: flex;
+align-items:flex-start;
+ justify-content: center;
+  color: white;
+  position: relative;
+}
+.lst1{
+  width: 95%;
+  height: 30vh;
+  font-size: 20px;
+  z-index: 1;
+  margin-top: 60px;
+padding: 0 2vw;
+position: relative;
+display: flex;
+justify-content: space-between;
+top: 10vh;
+
+}
+.lst1h2 {
+  font-size:  1.9vw;
+
+}
+.page5>.lst1h2> h2:hover{
+  cursor: pointer;
+  background-color: black;
+  
+}
+.lastanime{
+  width: 99%;
+  height: 95vh;
+  overflow-x: auto;
+filter: blur(20px);
+  position: absolute;
+  
+  z-index: 1;
+  top: 0%;
+
+}
+.lastanime>.e1 {
+  width: 20%;
+  top: -20%;
+  filter: blur(20px);
+  height: 80vh;
+  position: absolute;
+  left: 0%;
+  background-color: #F8380C;
+  animation-name: lastanime1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+
+}
+.lastanime>.e15 {
+  width: 10%;
+  top: -20%;
+  filter: blur(50px);
+  height: 75vh;
+  position: absolute;
+  left: 10%;
+  background-color: #F8380C;
+  animation-name: lastanime15;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+.lastanime>.e20{
+  width: 120%;
+  top: -20%;
+  filter: blur(50px);
+  height: 60vh;
+  position: absolute;
+  left: -2%;
+  background-color: #F8380C;
+  animation-name: lastanime20;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+
+}
+
+.lastanime>.e3 {
+  width: 22%;
+  height: 70vh;
+  filter: blur(20px);
+  left: 35%;
+  top: -20%;
+  position: absolute;
+  background-color: #F8380C;
+  animation-name: lastanime3;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  border-radius: 30%;
+
+}
+.lastanime>.e4 {
+  width: 20%;
+  height: 60vh;
+  top: -20%;
+left: 52%;
+filter: blur(20px);
+  position: absolute;
+  background-color: #F8380C;
+  animation-name: lastanime4;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+
+}
+.lastanime>.e5 {
+  width: 20%;
+  left: 68%;
+  top: -20%;
+  filter: blur(30px);
+  height: 70vh;
+  position: absolute;
+  background-color: #F8380C;
+  animation-name: lastanime5;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+
+}
+.lastanime>.e6 {
+  width: 30%;
+  left: 80%;
+  top: -20%;
+  filter: blur(25px);
+  height: 95vh;
+  position: absolute;
+  background-color: #F8380C;
+  animation-name: lastanime6;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+
+}
+
+@keyframes lastanime1 {
+  from{
+    transform: translate(0,-6%) skew(10deg);
+  }
+  to{
+    transform: translate(0,-3%) skew(-10deg);
+  }
+}
+@keyframes lastanime15 {
+  from{
+    transform: translate(0,-8%) skew(0);
+  }
+  to{
+    transform: translate(0,-2%) skew(-20deg);
+  }
+}
+@keyframes lastanime2 {
+  from{
+    transform: translate(0,-9%)  ;
+  }
+  to{
+    transform: translate(0,-7%);
+  }
+}
+
+@keyframes lastanime3{
+  from{
+    transform: translate(0,-6%) skew(10deg);
+  }
+  to{
+    transform: translate(0,-2%) skew(-20deg);
+  }
+}
+@keyframes lastanime4{
+  from{
+    transform: translate(0,-10%) skew(0);
+  }
+  to{
+    transform: translate(0,-3%) kew(20deg);
+  }
+}
+@keyframes lastanime5{
+  from{
+    transform: translate(0,-6%) skew(10deg);
+  }
+  to{
+    transform: translate(0,-4%) akew(15deg);
+  }
+}
+@keyframes lastanime6{
+  from{
+    transform: translate(-5%,-10%) skew(0);
+  }
+  to{
+    transform: translate(3%,-3%) skew(-20deg);
+  }
+}
+input{ 
+  height: 5vh;
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  font-size: 1.2vw;
+}
+
+.footerl {
+  width: 90%;
+  font-size: 1.1vw;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.fixedvdos {
+  position: fixed;
+  background-color: #F8380C;
+  width: 28%;
+  height: 60vh;
+  z-index: 5;
+  left: 40%;
+  top: 24vh;
+  border-radius: 10px;
+  display: none;
+}
