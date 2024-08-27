@@ -229,13 +229,14 @@ width: 50vw;
     }
 }
 .page2 {
-height: 80vh;
+height: 80svh;
   width: 100%;
  overflow: hidden;
 text-align: center;
   transition: 0.3s all ease;
   padding: 0 1vw;
   background-color: #EFEAE3;
+  border-bottom: 1px solid black;
 }
 .page2>h1 {
   font-size: 11vw;
@@ -395,11 +396,13 @@ text-align: center;
 }
 .page4{
   width: 100%;
-  min-height: 150vh;
+  min-height: 150svh;
   padding-top: 5vw;
+  padding-bottom: 10px;
   background-color:#EFEAE3;
   border-bottom: 1px solid rgba(0, 0, 0, 0.832);
   overflow: hidden;
+  border-bottom: 1px solid black;
 
 }
 .page4>.lft{
@@ -484,7 +487,7 @@ align-items:flex-start;
   height: 30vh;
   font-size: 20px;
   z-index: 1;
-  margin-top: 60px;
+
 padding: 0 2vw;
 position: relative;
 display: flex;
@@ -677,7 +680,7 @@ filter: blur(20px);
   }
 }
 input{ 
-  height: 5vh;
+  height: 5svh;
   margin-top: 20px;
   border: none;
   background-color: transparent;
