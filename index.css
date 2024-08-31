@@ -229,7 +229,7 @@ width: 50vw;
     }
 }
 .page2 {
-height: 80svh;
+
   width: 100%;
  overflow: hidden;
 text-align: center;
@@ -239,7 +239,7 @@ text-align: center;
   border-bottom: 1px solid black;
 }
 .page2>h1 {
-  font-size: 11vw;
+  font-size: 13vw;
  letter-spacing: 3px;
  background-color: rgb(177, 52, 23);
  margin-top: 8px;
@@ -251,7 +251,7 @@ text-align: center;
 }
 .page3 {
   width: 100%;
-  height: 102vh;
+
   position: relative;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-top: 8vw;

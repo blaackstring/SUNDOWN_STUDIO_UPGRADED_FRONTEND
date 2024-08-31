@@ -77,6 +77,7 @@ let allvdos=document.querySelectorAll('.lft')
 
 allvdos.forEach((x)=>{
     x.addEventListener('mouseenter',(e)=>{
+        fixeddiv.style.display='block'
         if(e.target){
         let y= x.getAttribute('data-image');
         console.log(y);
@@ -85,16 +86,14 @@ allvdos.forEach((x)=>{
            fixeddiv.style.backgroundSize='cover';
            fixeddiv.style.backgroundPostion='center'
            
-           fixeddiv.style.display='block'
+           
 
         }
     })
 
    document.querySelector('.page4').addEventListener('mouseleave',(e)=>{
         if(e.target){
-       
-    console.log("j");
-    
+
              fixeddiv.style.display='none'
         
        return;
